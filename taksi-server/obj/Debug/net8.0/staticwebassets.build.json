@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wj9NLwH3CHk/fa4Gm+jhGwI3hHvDVVIZ+Q5/7Lm+vKs=",
+  "Source": "taksi-server",
+  "BasePath": "_content/taksi-server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,6 @@
+@taksi_server_HostAddress = http://localhost:5031
+
+GET {{taksi_server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
