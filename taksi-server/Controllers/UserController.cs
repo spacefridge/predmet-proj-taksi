@@ -9,7 +9,7 @@ using taksi_server.ExceptionHandler;
 
 namespace taksi_server.Controllers
 {
-	[Route("api/[controller]")]
+	[Route("api/users")]
 	[ApiController]
 	public class UserController : ControllerBase
 	{

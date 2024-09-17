@@ -70,7 +70,17 @@ builder.Services.AddAuthorization(options =>
 {
 	options.AddPolicy("IsVerified", policy => policy.RequireClaim("VerificationState", "Accepted"));
 });
-
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy(name: "cors", builder =>
+	{
+		builder
+		.WithOrigins("http://localhost:4200")
+		.AllowAnyHeader()
+		.AllowAnyMethod()
+		.AllowCredentials();
+	});
+});
 
 
 builder.Services.AddScoped<IUserService, UserService>();
@@ -105,6 +115,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("cors");
 app.UseRouting();
 
 app.UseAuthentication();

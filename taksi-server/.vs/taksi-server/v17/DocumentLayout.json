@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\dto\\logindto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:dto\\logindto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\dto\\logindto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:dto\\logindto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -23,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:exceptionhandler\\invalidfiled.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\mapper\\mapprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:mapper\\mapprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,24 +51,8 @@
       "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:taksi-server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\dto\\logindto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:dto\\logindto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\dto\\logindto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:dto\\logindto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5845B814-5E98-4571-8713-4859CB517636}|taksi-server.csproj|c:\\users\\user\\desktop\\pred-proj\\taksi-server\\context\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,71 +114,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwEMAAABUAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAADwv10AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T20:58:58.244Z"
+              "WhenOpened": "2024-09-16T20:58:58.244Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IUserService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "Interfaces\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAawBAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T20:35:18.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\DTO\\LoginDTO\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "DTO\\LoginDTO\\LoginRequestDTO.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\DTO\\LoginDTO\\LoginRequestDTO.cs",
               "RelativeToolTip": "DTO\\LoginDTO\\LoginRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T20:41:33.964Z"
+              "WhenOpened": "2024-09-16T20:41:33.964Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAADgvz0AAAAaAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAADgv00AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T20:52:19.112Z"
+              "WhenOpened": "2024-09-16T20:52:19.112Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "taksi-server.http",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\taksi-server.http",
-              "RelativeDocumentMoniker": "taksi-server.http",
-              "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\taksi-server.http",
-              "RelativeToolTip": "taksi-server.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-09-16T20:22:00.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -191,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "InvalidFiled.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\ExceptionHandler\\InvalidFiled.cs",
               "RelativeDocumentMoniker": "ExceptionHandler\\InvalidFiled.cs",
@@ -199,8 +178,7 @@
               "RelativeToolTip": "ExceptionHandler\\InvalidFiled.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T21:02:03.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T21:02:03.798Z"
             },
             {
               "$type": "Document",
@@ -216,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "UserType.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Enumerations\\UserType.cs",
               "RelativeDocumentMoniker": "Enumerations\\UserType.cs",
@@ -224,12 +202,11 @@
               "RelativeToolTip": "Enumerations\\UserType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T20:27:10.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T20:27:10.782Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "VerificationState.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Enumerations\\VerificationState.cs",
               "RelativeDocumentMoniker": "Enumerations\\VerificationState.cs",
@@ -237,12 +214,11 @@
               "RelativeToolTip": "Enumerations\\VerificationState.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T20:28:56.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T20:28:56.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
@@ -250,12 +226,49 @@
               "RelativeToolTip": "Services\\UserService.cs",
               "ViewState": "AQIAAEsAAAAAAAAAAAAQwF0AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T21:18:07.69Z",
+              "WhenOpened": "2024-09-16T21:18:07.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\DTO\\LoginDTO\\LoginResponseDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LoginDTO\\LoginResponseDTO.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\DTO\\LoginDTO\\LoginResponseDTO.cs",
+              "RelativeToolTip": "DTO\\LoginDTO\\LoginResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T20:42:06.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T20:35:18.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "taksi-server.http",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\taksi-server.http",
+              "RelativeDocumentMoniker": "taksi-server.http",
+              "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\taksi-server.http",
+              "RelativeToolTip": "taksi-server.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-09-16T20:22:00.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "MapProfiles.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Mapper\\MapProfiles.cs",
               "RelativeDocumentMoniker": "Mapper\\MapProfiles.cs",
@@ -267,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
@@ -288,18 +301,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T21:02:25.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginResponseDTO.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\DTO\\LoginDTO\\LoginResponseDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\LoginDTO\\LoginResponseDTO.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\pred-proj\\taksi-server\\DTO\\LoginDTO\\LoginResponseDTO.cs",
-              "RelativeToolTip": "DTO\\LoginDTO\\LoginResponseDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T20:42:06.348Z"
             },
             {
               "$type": "Document",
