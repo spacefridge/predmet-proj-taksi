@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("taksi-server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+346810390c11f21cc34b7d05c564ffd2d7fa3fb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65dd3ba3e8cab59a90fbad75c2656329ecb83420")]
 [assembly: System.Reflection.AssemblyProductAttribute("taksi-server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("taksi-server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

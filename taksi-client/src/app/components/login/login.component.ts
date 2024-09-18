@@ -3,7 +3,8 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from "@angula
 import { Router, RouterModule } from "@angular/router";
 import { AuthService } from "../../shared/services/authorization.service";
 import { CommonModule } from "@angular/common";
-import { first } from "rxjs";
+import { first, skip } from "rxjs";
+import { LoginResponse } from "../../shared/models/http/auth/login-response.model";
 
 @Component({
 	selector: "app-login",
@@ -17,6 +18,7 @@ export class LoginComponent implements OnInit {
 	loading = false;
 	errorMessage: string | null = null;
 	submitted: boolean = false;
+	user: LoginResponse | null = null;
 
 	constructor(private formBuilder: FormBuilder, private authService: AuthService, private router: Router) {}
 
@@ -47,8 +49,25 @@ export class LoginComponent implements OnInit {
 			.login(username, password)
 			.pipe(first())
 			.subscribe({
-				next: () => {
-					this.router.navigate(["/admin"]);
+				next: data => {
+					this.user = data;
+					localStorage.setItem("userData", JSON.stringify(this.user));
+					console.log(this.user.userType);
+					switch (this.user.userType) {
+						case 0:
+							this.router.navigate(["/admin"]);
+							break;
+						case 1:
+							this.router.navigate(["/driver"]);
+							break;
+						case 2:
+							this.router.navigate(["/user"]);
+							break;
+						default:
+							console.log("washere");
+							this.router.navigate(["/login"]);
+							break;
+					}
 					this.loading = false;
 				},
 				error: () => {

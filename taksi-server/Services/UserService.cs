@@ -34,7 +34,7 @@ namespace taksi_server.Services
 
 			//JUMP: encrypt the pass
 			user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password, BCrypt.Net.BCrypt.GenerateSalt());
-			user.VerificationState =  VerificationState.Pending;
+			user.VerificationState = user.UserType == UserType.Driver ? VerificationState.Pending : null;
 
 			_userRepositories.RegisterUser(user);
 
@@ -75,7 +75,7 @@ namespace taksi_server.Services
 			List<Claim> claims = new List<Claim>();
 			claims.Add(new Claim("Id", user.Id.ToString()));
 			claims.Add(new Claim(ClaimTypes.Role, user.UserType.ToString()));
-			if ( user.VerificationState == VerificationState.Accepted)
+			if (user.UserType == UserType.Driver && user.VerificationState == VerificationState.Accepted)
 			{
 				claims.Add(new Claim("VerificationState", user.VerificationState.ToString()));
 			}
@@ -94,7 +94,9 @@ namespace taksi_server.Services
 			LoginResponseDTO responseDto = new LoginResponseDTO()
 			{
 				Id = user.Id,
-				Token = new JwtSecurityTokenHandler().WriteToken(securityToken)
+				Token = new JwtSecurityTokenHandler().WriteToken(securityToken),
+				UserType = user.UserType,
+				VerificationStatee = user.VerificationState
 			};
 
 			return responseDto;
@@ -142,10 +144,10 @@ namespace taksi_server.Services
 			}
 
 			//JUMP:
-			//if (user.UserType != UserType.Seller)
-			//{
-			//	throw new InvalidField("Not a seller. Can't verify.");
-			//}
+			if (user.UserType != UserType.Driver)
+			{
+				throw new InvalidField("Not a driver. Can't verify.");
+			}
 
 			_mapper.Map(requestDto, user);
 

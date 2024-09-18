@@ -68,7 +68,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddAuthorization(options =>
 {
-	options.AddPolicy("IsVerified", policy => policy.RequireClaim("VerificationState", "Accepted"));
+	options.AddPolicy("IsVerifiedDriver", policy => policy.RequireClaim("VerificationState", "Accepted"));
 });
 builder.Services.AddCors(options =>
 {

@@ -1,0 +1,43 @@
+<div class="table-container">
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Username</th>
+				<th>Email</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Birthdate</th>
+				<th>Address</th>
+				<th>User Type</th>
+				<th>Verification State</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let user of users">
+				<td>{{ user.id }}</td>
+				<td>{{ user.username }}</td>
+				<td>{{ user.email }}</td>
+				<td>{{ user.firstName }}</td>
+				<td>{{ user.lastName }}</td>
+				<td>{{ user.birthdate }}</td>
+				<td>{{ user.address }}</td>
+				<td>{{ user.userType | userType }}</td>
+				<td
+					>{{ user.verificationState | verificationStatus }}
+					<button
+						(click)="accept(user.id)"
+						style="width: auto; height: auto; color: red"
+						*ngIf="user.verificationState == 0"
+						>Accept</button
+					><button
+						(click)="deny(user.id)"
+						style="width: auto; height: auto; color: green"
+						*ngIf="user.verificationState == 0"
+						>Reject</button
+					></td
+				>
+			</tr>
+		</tbody>
+	</table>
+</div>
