@@ -6,6 +6,8 @@ using taksi_server.DTO.UserDTO;
 using taksi_server.DTO.VerificationDTO;
 using taksi_server.Interfaces;
 using taksi_server.ExceptionHandler;
+using taksi_server.DTO.RideDTO;
+using taksi_server.Services;
 
 namespace taksi_server.Controllers
 {
@@ -133,5 +135,27 @@ namespace taksi_server.Controllers
 
 			return Ok(user);
 		}
+
+		[HttpPut("{rating}/{id}")]
+		public IActionResult ChangeRating([FromRoute] long rating, [FromRoute] int id)
+		{
+			UserResponseDTO user;
+
+			try
+			{
+				user = _userService.ChangeRating(rating,id);
+			}
+			catch (ResourceMissing e)
+			{
+				return NotFound(e.Message);
+			}
+			catch (InvalidField e)
+			{
+				return BadRequest(e.Message);
+			}
+
+			return Ok(user);
+		}
+
 	}
 }

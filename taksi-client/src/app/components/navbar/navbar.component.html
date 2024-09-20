@@ -1,1 +1,43 @@
-<p>navbar works!</p>
+<nav class="navbar">
+	<div class="container">
+		<a routerLink="/" class="navbar-brand">MyApp</a>
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a routerLink="/" class="nav-link"></a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged() && roleService.checkAdmin()">
+				<a routerLink="/history" class="nav-link">All Rides</a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged() && !roleService.checkAdmin() && countdown <= 0">
+				<a routerLink="/chat" class="nav-link">Chat</a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged() && roleService.checkDriver() && countdown <= 0">
+				<a routerLink="/history" class="nav-link">My Rides</a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged() && roleService.checkDriver() && countdown <= 0">
+				<a routerLink="/accept" class="nav-link">New Rides</a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged() && roleService.checkAdmin()">
+				<a routerLink="/verification" class="nav-link">Verification</a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged() && roleService.checkUser() && countdown <= 0">
+				<a routerLink="/history" class="nav-link">Ride History</a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged() && roleService.checkUser() && countdown <= 0">
+				<a routerLink="/newrideuser" class="nav-link">Ride Request</a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged() && countdown <= 0">
+				<a routerLink="/edit" class="nav-link">Profile</a>
+			</li>
+			<li class="nav-item" *ngIf="!roleService.isLogged()">
+				<a routerLink="/register" class="nav-link">Register</a>
+			</li>
+			<li class="nav-item" *ngIf="!roleService.isLogged()">
+				<a routerLink="/login" class="nav-link">Login</a>
+			</li>
+			<li class="nav-item" *ngIf="roleService.isLogged()">
+				<a routerLink="/login" class="nav-link">Logout</a>
+			</li>
+		</ul>
+	</div>
+</nav>

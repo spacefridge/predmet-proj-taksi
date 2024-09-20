@@ -5,6 +5,10 @@ import { AuthService } from "../../shared/services/authorization.service";
 import { CommonModule } from "@angular/common";
 import { first, skip } from "rxjs";
 import { LoginResponse } from "../../shared/models/http/auth/login-response.model";
+import { RoleService } from "../../shared/services/role.service";
+import { RideService } from "../../shared/services/ride.service";
+import { RideWithId } from "../../shared/models/rides/ride-with-id.model";
+import { RideNotificationService } from "../../shared/services/ride-notification.service";
 
 @Component({
 	selector: "app-login",
@@ -20,13 +24,24 @@ export class LoginComponent implements OnInit {
 	submitted: boolean = false;
 	user: LoginResponse | null = null;
 
-	constructor(private formBuilder: FormBuilder, private authService: AuthService, private router: Router) {}
+	constructor(
+		private formBuilder: FormBuilder,
+		private authService: AuthService,
+		private router: Router,
+		private role: RoleService,
+		private rideService: RideService,
+		private rideNotificationService: RideNotificationService
+	) {
+		sessionStorage.removeItem("userData");
+	}
 
 	ngOnInit(): void {
 		this.loginForm = this.formBuilder.group({
 			username: ["", Validators.required],
 			password: ["", Validators.required]
 		});
+		//JUMP:
+		//this.rideNotificationService.startConnection();
 	}
 
 	// Getter for form controls
@@ -51,23 +66,54 @@ export class LoginComponent implements OnInit {
 			.subscribe({
 				next: data => {
 					this.user = data;
-					localStorage.setItem("userData", JSON.stringify(this.user));
-					console.log(this.user.userType);
-					switch (this.user.userType) {
-						case 0:
-							this.router.navigate(["/admin"]);
-							break;
-						case 1:
-							this.router.navigate(["/driver"]);
-							break;
-						case 2:
-							this.router.navigate(["/user"]);
-							break;
-						default:
-							console.log("washere");
-							this.router.navigate(["/login"]);
-							break;
+					sessionStorage.setItem("userData", JSON.stringify(this.user));
+					//proveri kosam, onda pokupi njegove voznje i pregledaj da li neki ima status da jos traje.
+					//ako ima odma tamo i vidi what happens
+					if (this.user.userType == 1) {
+						this.rideService.getAllRidesDriver(this.user.id).subscribe({
+							next: data => {
+								if (data.find(x => x.rideState == 1)) {
+									let temp = data.find(x => x.rideState == 1);
+
+									if (temp) {
+										sessionStorage.setItem("activeRideId", JSON.stringify(temp.id));
+										this.router.navigate(["/ridetimer"]);
+									}
+								} else {
+									this.router.navigate(["/dashboard"]);
+								}
+								this.loading = false;
+							},
+							error: () => {
+								this.loading = false;
+								console.log("error fetching data");
+							}
+						});
+					} else if (this.user.userType == 2) {
+						this.rideService.getAllRidesUser(this.user.id).subscribe({
+							next: data => {
+								if (data.find(x => x.rideState == 1)) {
+									let temp = data.find(x => x.rideState == 1);
+									if (temp) {
+										sessionStorage.setItem("activeRideId", JSON.stringify(temp.id));
+										this.router.navigate(["/ridetimer"]);
+									}
+								} else {
+									this.router.navigate(["/dashboard"]);
+								}
+								this.loading = false;
+							},
+							error: () => {
+								this.loading = false;
+								console.log("error fetching data");
+							}
+						});
+					} else {
+						this.loading = false;
+						this.router.navigate(["/dashboard"]);
 					}
+
+					console.log(this.user.userType);
 					this.loading = false;
 				},
 				error: () => {

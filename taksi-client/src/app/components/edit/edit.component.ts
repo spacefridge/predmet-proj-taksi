@@ -27,7 +27,7 @@ export class EditComponent implements OnInit {
 	constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router) {}
 
 	ngOnInit(): void {
-		const storedUser = localStorage.getItem("userData");
+		const storedUser = sessionStorage.getItem("userData");
 		this.currentUser = storedUser ? JSON.parse(storedUser).id : null;
 
 		this.userService.getUserById(this.currentUser).subscribe({

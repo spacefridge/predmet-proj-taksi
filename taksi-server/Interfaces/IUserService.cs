@@ -13,5 +13,10 @@ namespace taksi_server.Interfaces
 		UserResponseDTO RegisterUser(RegistrationRequestDTO requestDto);
 		UserResponseDTO GetUserById(long id);
 
+		UserResponseDTO ChangeRating(long rating, int id);
+
 	}
 }
+
+
+

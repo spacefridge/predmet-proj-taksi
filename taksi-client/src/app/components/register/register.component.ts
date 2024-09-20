@@ -62,6 +62,7 @@ export class RegisterComponent implements OnInit {
 		this.submitted = true;
 
 		if (this.registerForm.invalid) {
+			console.log("here");
 			return;
 		}
 
@@ -82,7 +83,7 @@ export class RegisterComponent implements OnInit {
 			.pipe(first())
 			.subscribe({
 				next: () => {
-					this.router.navigate(["/admin"]);
+					this.router.navigate(["/login"]);
 				},
 				error: () => {}
 			});

@@ -12,6 +12,7 @@ using taksi_server.DTO.VerificationDTO;
 using Microsoft.AspNetCore.Routing.Matching;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using taksi_server.DTO.RideDTO;
 
 namespace taksi_server.Services
 {
@@ -178,6 +179,27 @@ namespace taksi_server.Services
 			}
 
 			return user;
+		}
+
+
+		public UserResponseDTO ChangeRating(long rating,int id)
+		{
+			var user = _userRepositories.GetUserByID(id);
+
+			if (user == null)
+			{
+				throw new ResourceMissing("No user with given id." + id);
+			}
+			user.UserRating = rating;
+			try
+			{
+				_userRepositories.SaveChanges();
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+			return _mapper.Map<UserResponseDTO>(user);
 		}
 
 	}

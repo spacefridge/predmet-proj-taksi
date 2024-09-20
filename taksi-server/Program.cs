@@ -11,11 +11,13 @@ using taksi_server.Mapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using taksi_server.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<RideTimerService>();
 builder.Services.AddControllers();
 
 builder.Services.AddSwaggerGen(c =>
@@ -86,6 +88,9 @@ builder.Services.AddCors(options =>
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepositories, UserRepository>();
 
+builder.Services.AddScoped<IRideService, RideService>();
+builder.Services.AddScoped<IRideRepositories, RideRepository>();
+
 builder.Services.AddDbContext<DatabaseContext>(options =>
 {
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnectionString"));
@@ -120,6 +125,10 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+
+//JUMP: huh ?
+app.MapHub<RideHub>("/rideHub");
 
 app.MapControllers();
 

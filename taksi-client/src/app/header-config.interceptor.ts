@@ -12,12 +12,11 @@ import { Observable } from "rxjs";
 @Injectable()
 export class HeaderConfigInterceptor implements HttpInterceptor {
 	token: string = "";
-	constructor() {
-		const storedUser = localStorage.getItem("userData");
-		this.token = storedUser ? JSON.parse(storedUser).token : null;
-	}
+	constructor() {}
 
 	intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+		const storedUser = sessionStorage.getItem("userData");
+		this.token = storedUser ? JSON.parse(storedUser).token : null;
 		if (request.url.indexOf("https://localhost:7172/") === 0) {
 			request = request.clone({
 				headers: new HttpHeaders({

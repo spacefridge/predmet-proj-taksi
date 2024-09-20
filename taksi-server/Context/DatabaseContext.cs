@@ -6,6 +6,7 @@ namespace taksi_server.Context
 	public class DatabaseContext : DbContext
 	{
 		public DbSet<User> Users { get; set; }
+		public DbSet<Ride> Rides { get; set; }
 
 		public DatabaseContext(DbContextOptions options) : base(options)
 		{

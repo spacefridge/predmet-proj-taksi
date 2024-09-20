@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
-import { environment } from "../../../env/env";
+import { environment } from "../../../environment/environment ";
 import { map, Observable } from "rxjs";
 import { LoginResponse } from "../models/http/auth/login-response.model";
 import { LoginParams } from "../models/http/auth/login-request.model";

@@ -1,0 +1,26 @@
+<table border="1" cellpadding="10" cellspacing="0">
+	<thead>
+		<tr>
+			<th>Start Address</th>
+			<th>End Address</th>
+			<th>User ID</th>
+			<th>Driver ID</th>
+			<th>Price</th>
+			<th>Wait Time</th>
+			<th>Ride Duration</th>
+			<th>Ride State</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let ride of rides">
+			<td>{{ ride.startAddress }}</td>
+			<td>{{ ride.endAddress }}</td>
+			<td>{{ ride.userId }}</td>
+			<td>{{ ride.driverId }}</td>
+			<td>{{ ride.price || "N/A" }}</td>
+			<td>{{ ride.waitTime || "N/A" }} mins</td>
+			<td>{{ ride.rideDuration }} mins</td>
+			<td>{{ ride.rideState }}</td>
+		</tr>
+	</tbody>
+</table>

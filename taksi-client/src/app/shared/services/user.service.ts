@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
-import { environment } from "../../../env/env";
+import { environment } from "../../../environment/environment ";
 import { map, Observable } from "rxjs";
 import { LoginResponse } from "../models/http/auth/login-response.model";
 import { LoginParams } from "../models/http/auth/login-request.model";
@@ -95,5 +95,10 @@ export class UserService {
 	verification(id: number, verificationState: number): Observable<VerificationResponse> {
 		const url = `https://localhost:7172/api/users/verify/${id}`;
 		return this.http.post<VerificationResponse>(url, { verificationState });
+	}
+
+	ChangeRating(rating: number, id: number): Observable<WholeUser> {
+		const url = `${this.apiBaseUrl}api/users/${rating}/${id}`;
+		return this.http.put<WholeUser>(url, {});
 	}
 }

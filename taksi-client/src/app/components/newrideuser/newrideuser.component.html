@@ -1,0 +1,23 @@
+<form [formGroup]="rideForm" (ngSubmit)="calculateRide()">
+	<div>
+		<label for="startAddress">Start Address:</label>
+		<input id="startAddress" formControlName="startAddress" type="text" />
+	</div>
+
+	<div>
+		<label for="endAddress">End Address:</label>
+		<input id="endAddress" formControlName="endAddress" type="text" />
+	</div>
+
+	<button type="submit" [disabled]="!rideForm.valid">Calculate Ride</button>
+</form>
+
+<div *ngIf="waitTime !== null && price !== null">
+	<p>Estimated Wait Time: {{ waitTime }} minutes</p>
+	<p>Estimated Price: {{ price }} rsd</p>
+	<button (click)="confirmRide()">Confirm Ride</button>
+</div>
+
+<div *ngIf="rideConfirmed">
+	<p>Ride confirmed! Your driver is on the way.</p>
+</div>

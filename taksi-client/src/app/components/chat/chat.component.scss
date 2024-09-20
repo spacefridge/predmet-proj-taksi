@@ -1,0 +1,27 @@
+.chat-container {
+	width: 400px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.driver-list {
+	margin-bottom: 10px;
+}
+
+.messages {
+	height: 200px;
+	overflow-y: auto;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+
+li {
+	cursor: pointer;
+}
+
+li.selected {
+	background-color: #ddd;
+	font-weight: bold;
+}

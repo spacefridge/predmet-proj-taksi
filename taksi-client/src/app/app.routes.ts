@@ -1,18 +1,27 @@
 import { Routes } from "@angular/router";
 import { LoginComponent } from "./components/login/login.component";
 import { RegisterComponent } from "./components/register/register.component";
-import { AdminComponent } from "./components/admin/admin.component";
-import { AuthGuard } from "./route-guard/route-authorization.guard";
-import { DriverComponent } from "./components/driver/driver.component";
-import { UserComponent } from "./components/user/user.component";
+import { DashboardComponent } from "./components/dashboard/dashboard.component";
+import { EditComponent } from "./components/edit/edit.component";
+import { VerificationComponent } from "./components/verification/verification.component";
+import { NewrideuserComponent } from "./components/newrideuser/newrideuser.component";
+import { RidehistoryComponent } from "./components/ridehistory/ridehistory.component";
+import { RidetimerComponent } from "./components/ridetimer/ridetimer.component";
+import { ChatComponent } from "./components/chat/chat.component";
+import { AcceptrideComponent } from "./components/acceptride/acceptride.component";
 
 //JUMP: todo only admin can see admin etc
 export const routes: Routes = [
 	{ path: "login", component: LoginComponent },
 	{ path: "register", component: RegisterComponent },
-	{ path: "admin", component: AdminComponent },
-	{ path: "driver", component: DriverComponent },
-	{ path: "user", component: UserComponent },
+	{ path: "dashboard", component: DashboardComponent },
+	{ path: "edit", component: EditComponent },
+	{ path: "verification", component: VerificationComponent },
+	{ path: "newrideuser", component: NewrideuserComponent },
+	{ path: "history", component: RidehistoryComponent },
+	{ path: "ridetimer", component: RidetimerComponent },
+	{ path: "chat", component: ChatComponent },
+	{ path: "accept", component: AcceptrideComponent },
 	{ path: "", redirectTo: "login", pathMatch: "full" },
 	{ path: "**", redirectTo: "login" }
 ];

@@ -1,0 +1,23 @@
+<div class="table-container" *ngIf="currentUserType == 1">
+	<table>
+		<thead>
+			<tr>
+				<th>Start Address</th>
+				<th>End Address</th>
+				<th>User ID</th>
+				<th>Price</th>
+				<th>Ride Duration</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let ride of ridereqList">
+				<td>{{ ride.startAddress }}</td>
+				<td>{{ ride.endAddress }}</td>
+				<td>{{ ride.userId }}</td>
+				<td>{{ ride.price }}</td>
+				<td>{{ ride.waitTime }} minutes</td>
+				<td><button (click)="acceptRide(ride)"> accept</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

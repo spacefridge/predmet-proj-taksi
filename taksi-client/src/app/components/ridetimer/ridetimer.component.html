@@ -1,0 +1,16 @@
+<div *ngIf="countdown > 0">
+	<h1>Time till driver comes = {{ wait }}.</h1>
+	<h1>Ride duration = {{ rideTime }}</h1>
+	<p>Time Remaining: {{ countdown | minutesSeconds }}</p>
+</div>
+<div *ngIf="domSwitch">
+	<div class="rating-section">
+		<h3>Rate Your Driver</h3>
+		<label for="driverRating">Rate (1-5):</label>
+		<input type="number" id="driverRating" [(ngModel)]="driverRating" min="1" max="5" placeholder="Enter rating" />
+
+		<button (click)="submitRating()">Submit Rating</button>
+
+		<p *ngIf="ratingMessage">{{ ratingMessage }}</p>
+	</div>
+</div>

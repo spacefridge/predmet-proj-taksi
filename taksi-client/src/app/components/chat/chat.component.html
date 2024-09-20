@@ -1,0 +1,33 @@
+<div class="chat-container">
+	<h2>Chat</h2>
+
+	<div class="driver-list">
+		<h3>Available Drivers</h3>
+		<ul>
+			<li
+				*ngFor="let driver of chatService.drivers"
+				[class.selected]="selectedDriver === driver"
+				(click)="selectDriver(driver)">
+				{{ driver }}
+			</li>
+		</ul>
+	</div>
+
+	<div class="driver-list">
+		<h3>Available Users</h3>
+		<ul>
+			<li *ngFor="let user of chatService.users" [class.selected]="selectedUser === user" (click)="selectUser(user)">
+				{{ user }}
+			</li>
+		</ul>
+	</div>
+
+	<div class="messages">
+		<div *ngFor="let message of messages">
+			<strong>{{ message.sender }}:</strong> {{ message.text }}
+		</div>
+	</div>
+
+	<input type="text" [(ngModel)]="messageInput" placeholder="Type your message..." />
+	<button (click)="sendMessage()">Send</button>
+</div>

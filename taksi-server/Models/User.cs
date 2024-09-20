@@ -14,5 +14,7 @@ namespace taksi_server.Models
 		public string Address { get; set; }
 		public UserType UserType { get; set; }
 		public VerificationState? VerificationState { get; set; }
+
+		public long? UserRating { get; set; }
 	}
 }

@@ -33,6 +33,7 @@ namespace taksi_server.ModelConfigs
 			builder.Property(x => x.UserType).HasConversion<string>();
 
 			builder.Property(x => x.VerificationState).HasConversion<string>();
+			builder.Property(x => x.UserRating);
 		}
 	}
 }
